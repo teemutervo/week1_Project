@@ -44,24 +44,12 @@
       </tr>
     </table>
 
-    <button onclick="addList()">Add comment</button>
-    <button id="remove-comments">Remove comments</button>
-    <textarea id="Text" rows="10" cols="50"></textarea>
+    <button id="add-comment">Add comment</button>
+    <button id="remove-comment">Remove comments</button>
+    <textarea id="comment-text" rows="10" cols="50"></textarea>
 
-    <ul id="list">
-      <li></li>
-    </ul>
+    <ul id="list"></ul>
 
-    <script>
-      function addList() {
-        const userText = document.getElementById("Text").value,
-          listNode = document.getElementById("list"),
-          liNode = document.createElement("LI"),
-          txtNode = document.createTextNode(userText);
-
-        liNode.appendChild(txtNode);
-        listNode.appendChild(liNode);
-      }
-    </script>
+    <script src="src/index.js"></script>
   </body>
 </html>
