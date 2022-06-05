@@ -19,3 +19,11 @@ addCommentButton.addEventListener("click", () => {
   li.appendChild(document.createTextNode(commentValue));
   ul.appendChild(li);
 });
+
+function removeComments() {
+  ul.innerHTML = "";
+  confirm("Haluatko varmasti poistaa kommentit?");
+}
+
+const removeCommentButton = document.getElementById("remove-comments");
+removeCommentButton.addEventListener("click", removeComments);
